@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            background-color: grey;
+            padding: 10px;
+            display: grid;
+            
+            /*display:inline-grid;*/
+            /*grid-template-columns: auto auto auto;*/
+
+            /*grid-template-columns: 100px 300px;
+            grid-template-rows: 30px 40px 50px 30px 50px 60px; /*each value specify the rows height*/
+
+            /*grid-template-columns: 100px 300px 100px 50px;
+            grid-template-rows: 30px 40px; /*each value specify the rows height*/
+
+            grid-template-columns:  auto  auto  auto auto auto;
+            grid-template-rows:  40px  50px 50px 50px 50px;
+            /*column-gap: 10px;
+            row-gap: 10px;*/
+            /*gap: 10px; if row gap and column gap has same spacing*/
+            gap: 20px; /*create row gap and column gap  spacing*/
+
+
+            
+
+
+
+        }
+
+        .item{
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .item1{
+            /*grid-column-start: 3;
+            grid-column-end: 4;*/
+
+            grid-column: 1/6;
+            /*grid-row-start: 2;
+            grid-row-end: 5;*/
+        }
+
+        .item2{
+            /*grid-column-start: 3;
+            grid-column-end: 4;*/
+
+            grid-row-start: 2;
+            grid-row-end: 6           ;
+        }
+
+        .item3{
+            grid-column-start: 2;
+            grid-column-end: 5;
+
+            grid-row-start: 2;
+            grid-row-end: 5           ;
+        }
+
+        .item4{
+           
+
+            grid-row-start: 2;
+            grid-row-end: 5           ;
+        }
+
+        .item5{          
+
+            grid-column-start: 2;
+            grid-column-end: 6;         
+       }
+
+
+    </style>
+    <title>James Thiah</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1" style="background-color: red;">
+           Header
+        </div>
+        <div class="item item2 " style="background-color: green;">
+            Menu
+        </div>
+        <div class="item item3" style="background-color: orange;">
+           Main
+        </div>
+        <div class="item item4" style="background-color: yellowgreen;">
+           Right
+        </div>
+        <div class="item item5"style="background-color: pink;">
+            Footer
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
